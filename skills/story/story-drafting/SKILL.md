@@ -1,9 +1,9 @@
 # Skill: Story Drafting
 
-This skill is for executing specific scenes based on a locked structural engine. It focuses on prose and emotional expression without redesigning the story architecture.
+This skill is for executing specific scenes based on a locked 9-layer story engine. It focuses on prose and emotional expression without redesigning the story architecture.
 
 ## How to Use
-1.  Load the **Story Drafting Meta-Prompt v1**.
+1.  Load the **Story Drafting Meta-Prompt v2**.
 2.  Provide the **CONTEXT** (Canon) and the **STRUCTURAL ENGINE** (from the Ideation phase).
 3.  Define the **SCENE FUNCTION** (what the scene must accomplish).
 4.  Set the **SCENE INTENSITY DIAL** (LOW, RISING, or PEAK).
@@ -11,5 +11,5 @@ This skill is for executing specific scenes based on a locked structural engine.
 
 ## Best Practices
 *   Keep the structural engine locked. If the scene isn't working structurally, move back to Ideation or Revision.
-*   Use the intensity dial to control pacing and sensory density.
+*   Match the **Modulation** (tone, mood, style) to the **Target Experience**.
 *   Ensure every paragraph serves the declared Scene Function.
