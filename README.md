@@ -59,6 +59,10 @@ Use the **State Manager** (`prompts/story/story-state-manager-meta-prompt-v2.md`
 `Revision` and `Recovery` can operate at three scopes to prevent scope-creep and make outputs actionable:
 
 - `ENGINE`: Whole-story structure across the 9-layer engine. Use when the intended engine is known and you want a structural diagnosis or alignment check. See [prompts/story/story-revision-meta-prompt-v3.md](prompts/story/story-revision-meta-prompt-v3.md)
+- `ENGINE`: Whole-story structure across the 9-layer engine.
+	- In **Revision**, use `ENGINE` when the intended engine is known or mostly knowable and you want a structural diagnosis or alignment check.
+	- In **Recovery**, use `ENGINE` when unfinished material requires extraction of the implied engine (the output will be a recovered 9-layer map rather than a diagnostic of a known engine).
+	See [prompts/story/story-revision-meta-prompt-v3.md](prompts/story/story-revision-meta-prompt-v3.md) and [prompts/story/story-recovery-meta-prompt-v1.md](prompts/story/story-recovery-meta-prompt-v1.md)
 - `CHAPTER`: Chapter or scene-unit function within the larger engine. Use when the provided text is a self-contained unit and you want to assess its role, change, and thread advancement.
 - `PROSE`: Language-level modulation (POV, rhythm, tone, imagery, withholding/revealing). Use for diagnostics of how language produces the intended experience; do not request rewriting by default.
 

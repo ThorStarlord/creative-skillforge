@@ -24,3 +24,20 @@
 
 ### Fixed
 - README: Fixed a Markdown typo in the Bridge Workflow entry and added a brief usage example.
+
+## 2026-05-08 — Revision & Recovery Scope System
+### Added
+- Engine/Chapter/Prose scopes added to the Revision meta-prompt (`prompts/story/story-revision-meta-prompt-v3.md`).
+- `RECOVERY SCOPE` options formalized in Recovery (`prompts/story/story-recovery-meta-prompt-v1.md`) with `ENGINE` default.
+- Scope-specific Revision supplements: Engine Layer Map, Chapter Function, and Prose Modulation.
+- `PREPARE PHASE` command made scope-aware and State Manager now supports optional `[SCOPE]` parameter.
+- Templates: `templates/recovery-handoff.md`, `templates/revision-scope-handoff.md`.
+- Examples: `examples/revision-prose-example.md`, `examples/recovery-scan-example.md`.
+
+### Changed
+- Tightened Revision `ENGINE` wording and added an `ENGINE` alignment-audit path when no symptom is provided.
+- Reinforced `PROSE` no-rewrite rule in Revision.
+- README: Documented Revision/Recovery scopes and added quick examples.
+
+### Notes
+- Scopes are implemented as options within existing prompts; no split into separate prompts yet. Monitor `PROSE` usage for possible future specialization.

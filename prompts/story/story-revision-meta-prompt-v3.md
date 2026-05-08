@@ -86,6 +86,12 @@ If a symptom exists, check these layers in descending order to find the root cau
 * **PROMISE / CONSTRAINTS** (Is it fighting the genre/medium?).
 * **TARGET EXPERIENCE** (Has it drifted from the intended feeling?).
 
+### ENGINE ALIGNMENT AUDIT
+For `ENGINE` scope: if no local symptom is provided (the user asks for a whole-engine check), perform an alignment audit across the 9 layers rather than forcing a symptom-first diagnosis. The audit should:
+- Check coherence and alignment for each of the 9 layers.
+- Identify layer-level mismatches, gaps, or contradictions.
+- Produce a ranked list (1–3) of structural interventions and the expected downstream effects.
+
 ---
 
 ## REVISION RULES
@@ -126,13 +132,17 @@ Additionally, append a short scope-specific supplement depending on the declared
 	- Recommended structural adjustment: (one concrete structural move)
 
 - **CHAPTER — Chapter Function**
+- **CHAPTER — Chapter Function**
 	- Intended chapter/unit function:
+	- Chapter promise / reader expectation:
 	- Engine layer(s) served:
 	- What changes by the end of the unit:
 	- Thread(s) advanced:
 	- Drift or redundancy (if any):
 
 - **PROSE — Prose Modulation**
+- **PROSE — Prose Modulation**
+	- Reader pressure / felt effect:
 	- POV / distance:
 	- Rhythm / pacing:
 	- Imagery / motif patterning:

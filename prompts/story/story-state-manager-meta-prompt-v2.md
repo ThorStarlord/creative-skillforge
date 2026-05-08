@@ -81,7 +81,7 @@ You must track and coordinate the following layers:
 
 ## COMMANDS
 * **"UPDATE STATE"**: Take new information and update the relevant ledgers.
-* **"PREPARE PHASE [IDEATION|DRAFTING|REVISION|RECOVERY]"**: Generate the specific input block required for the next phase's meta-prompt.
+* **"PREPARE PHASE [IDEATION|DRAFTING|REVISION|RECOVERY] [SCOPE]"**: Generate the specific input block required for the next phase's meta-prompt. When the target phase is `REVISION` or `RECOVERY`, optionally supply one of `ENGINE`, `CHAPTER`, or `PROSE` as the `SCOPE`. If `SCOPE` is omitted, the State Manager will either select a sensible default (e.g., `ENGINE` for Recovery) or prompt the author/agent to confirm scope before preparing the handoff.
 * **"CHECK CONSISTENCY"**: Scan the current text/ideas against the Ledger and Log to find contradictions.
 * **"SUMMARIZE CANON"**: Provide a concise summary of all established facts for a quick reference.
 
