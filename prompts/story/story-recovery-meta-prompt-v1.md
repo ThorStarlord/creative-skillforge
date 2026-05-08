@@ -50,10 +50,44 @@ Use Recovery when the main question is: "What is this unfinished material trying
 
 ---
 ## RECOVERY DEPTH
-- **SCAN**: Identify the strongest signals and recommend the likely next workflow only.
-- **MAP**: Produce the full recovered 9-layer map with confidence labels.
+- If `RECOVERY DEPTH` is unspecified, default to **MAP** (full recovery).
+- If the provided material is extremely long, prefer **SCAN** for a fast triage and recommend whether a full **MAP** is needed.
+- **SCAN**: Short triage output for fast review (see MODE-SPECIFIC OUTPUT RULES).
+- **MAP**: Full recovered 9-layer map with evidence and per-layer confidence (default behaviour).
 - **FORK**: Produce multiple plausible recovered engines (2–3 variants) when the material contains competing engines.
-- **HANDOFF**: Convert the recovered map into a formatted input block for the State Manager or the next phase.
+- **HANDOFF**: Produce a handoff-optimized output that prioritizes the Prepared Input Block and State Manager fields for ingestion.
+
+## MODE-SPECIFIC OUTPUT RULES
+- **Default behavior**: If `RECOVERY DEPTH` is unspecified, treat the request as `MAP` and produce the full recovered output described below.
+- **SCAN OUTPUT (brief)**: Produce only the minimum viable recovery:
+	- Strongest Core Signals
+	- Likely Implied Engine (one-line summary)
+	- Biggest Missing Layer (single most consequential gap)
+	- Recommended Next Workflow (Ideation / Drafting / Revision / State Manager)
+	- Suggested Minimal Next Prompt or Quick Actions
+- **MAP OUTPUT (full)**: Produce the mandatory full output: Observed Evidence, Intent/Evidence Gap, Recovered 9-Layer Map (Evidence / Hypothesis / Confidence for each layer), Ideation Pathways, and Return Path (HANDOFF fields).
+- **FORK OUTPUT**: Present 2–3 distinct recovered engine variants. For each variant include:
+	- Brief engine summary (Target Experience + Core Conflict)
+	- Key supporting evidence (bulleted)
+	- Confidence per core layer
+	- Recommended Next Workflow and a short Prepared Input Block
+- **HANDOFF OUTPUT**: Prioritize the Prepared Input Block and State Manager fields. Include:
+	- Recommended Next Workflow
+	- Reason
+	- State Update Needed (Yes / No)
+	- Candidate Locked Layers (with Confidence)
+	- Open / Speculative Layers
+	- Author-Confirmation-Needed Layers
+	- Prepared Input Block (ready to ingest)
+	- Minimal map details only as necessary for safe ingestion.
+
+## EXTRACTION MODE ADJUSTMENTS
+When `EXTRACTION MODE` is explicitly requested, alter assumptions and output to treat the material as finished or canonical:
+- Treat the work as completed unless the user states otherwise.
+- Do not classify material as `Accidental Noise`; assume choices are intentional unless evidence suggests otherwise.
+- Replace the term **Useful Betrayals** with **Design Choices** (intentional deviations that can inform adaptation).
+- Prefer outputting a **Reusable Model** or **Canonical Engine** rather than a Return Path when appropriate.
+- Avoid unsolicited repair suggestions; only propose fixes when asked.
 
 ---
 
@@ -75,7 +109,10 @@ Map the evidence onto the 9-Layer Engine. For each layer, provide:
 
 ---
 
-## OUTPUT FORMAT (MANDATORY)
+## OUTPUT FORMAT
+
+- If `RECOVERY DEPTH` is `MAP` (or unspecified), produce the full recovered output described below.
+- If `RECOVERY DEPTH` is `SCAN`, `FORK`, or `HANDOFF`, follow the MODE-SPECIFIC OUTPUT RULES above.
 
 ### 1. OBSERVED EVIDENCE
 *   **Recurring Patterns**: (Images, conflicts, tonal signals)
@@ -146,6 +183,7 @@ If the material appears to contain multiple incompatible engines, do not collaps
 *   **Protect Author Ownership**: Do not declare what the story "is really about."
 *   **Evidence First**: If a layer is missing from the text, mark it as "Missing" rather than inventing it.
 *   **Contrast Intent**: If ORIGINAL INTENT is provided, highlight where the TEXT betrays that intent (often the most useful discovery).
+*   **Do Not Overfit**: Do not force the draft into a single elegant engine if the evidence is sparse, exploratory, or contradictory. Prefer multiple hypotheses or mark layers as `Missing`.
 *   **High-confidence is provisional**: High-confidence layers may be proposed as candidates for locking, but they require explicit author confirmation before being recorded as locked in the Story State Ledger.
 
 ---

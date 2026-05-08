@@ -43,6 +43,13 @@ You must track and coordinate the following layers:
     * Coordinate the move to the **Story Recovery** meta-prompt (Narrative Reverse Engineering).
     * Take the **Recovered 9-Layer Map** and synthesize it into a new or updated **Story State Ledger**.
     * Identify which layers are high-confidence, which are speculative, and which require author confirmation before being locked into the Story State Ledger.
+    * When ingesting Recovery output, preserve the following Recovery metadata for safe ledger updates and handoff:
+        * **Per-layer Confidence Labels** (High / Medium / Low / Missing)
+        * **Candidate Locked Layers** (with confidence)
+        * **Open / Speculative Layers**
+        * **Author-Confirmation-Needed Layers**
+        * **Recommended Next Workflow** (Ideation / Drafting / Revision / State Manager)
+        * **Prepared Input Block** (ready for ingestion by the next phase)
     * Determine whether the project should return to:
         * **Ideation**, if the recovered engine needs structural decisions;
         * **Drafting**, if the recovered engine is stable enough to continue generating scenes;
@@ -86,6 +93,14 @@ When performing an update or preparation, always use:
 * **State Updates**: [List of changes to Ledgers/Logs]
 * **Contradictions Found**: [Any issues detected]
 * **Phase Handoff**: [The formatted input for the target meta-prompt]
+
+When ingesting Recovery output specifically, ensure the Phase Handoff preserves Recovery metadata so the ledger can safely record proposed changes:
+* **Per-layer Confidence Labels** (High / Medium / Low / Missing)
+* **Candidate Locked Layers** (with confidence)
+* **Open / Speculative Layers**
+* **Author-Confirmation-Needed Layers**
+* **Recommended Next Workflow**
+* **Prepared Input Block**
 
 ---
 
