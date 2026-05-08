@@ -6,9 +6,10 @@ This repository is designed to preserve and evolve repeatable creative processes
 
 ## Core Philosophy: The Bidirectional Engine
 
-Good AI collaboration requires a structured narrative engine that works in two directions:
+Good AI collaboration requires a structured narrative engine that supports three complementary movements:
 - **Top-Down Ideation**: Moving from generative causes (**Target Experience**) toward visible execution (**Modulation**).
 - **Bottom-Up Diagnosis**: Starting from a symptom in the text and tracing it downward to find the broken root cause.
+- **Bottom-Up Recovery**: Starting from unfinished material and extracting the implied engine before returning to Ideation, Drafting, or Revision.
 
 ### The 9 Layers of Story
 1.  **Target Experience**: Audience feeling and emotional promise.
@@ -31,12 +32,15 @@ Good AI collaboration requires a structured narrative engine that works in two d
 
 ## Getting Started
 
-The core of the Creative Skillforge is a four-phase story development system:
+The core of the Creative Skillforge is a three-phase story development cycle supported by a Recovery bridge workflow:
 
+### Core Cycle
 1.  **Ideation** (`prompts/story/story-ideation-meta-prompt-v4.md`): Top-down creation from Experience to Modulation.
 2.  **Drafting** (`prompts/story/story-drafting-meta-prompt-v2.md`): Execution of scenes within the structural engine.
 3.  **Revision** (`prompts/story/story-revision-meta-prompt-v3.md`): Bottom-up diagnosis and refinement.
-4.  **Recovery / Reverse Engineering** (`prompts/story/story-recovery-meta-prompt-v1.md`): A bridge workflow for unfinished drafts. It extracts the implied story engine from existing material and returns the project to Ideation, Drafting, or Revision.
+
+### Bridge Workflow
+- **Recovery / Reverse Engineering** (`prompts/story/story-recovery-meta-prompt-v1.md`): A bridge workflow for unfinished drafts. It extracts the implied story engine from existing material and returns the project to Ideation, Drafting, or Revision.
 
 The **State Manager** coordinates Ideation, Drafting, Revision, and the Recovery bridge workflow. Recovery is used when existing draft material must be reverse-engineered into a recovered story engine before returning to Ideation, Drafting, or Revision.
 

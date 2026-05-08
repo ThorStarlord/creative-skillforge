@@ -42,7 +42,7 @@ You must track and coordinate the following layers:
 * **Your Task**:
     * Coordinate the move to the **Story Recovery** meta-prompt (Narrative Reverse Engineering).
     * Take the **Recovered 9-Layer Map** and synthesize it into a new or updated **Story State Ledger**.
-    * Identify which layers are high-confidence (locked) and which are speculative (open for Ideation).
+    * Identify which layers are high-confidence, which are speculative, and which require author confirmation before being locked into the Story State Ledger.
     * Determine whether the project should return to:
         * **Ideation**, if the recovered engine needs structural decisions;
         * **Drafting**, if the recovered engine is stable enough to continue generating scenes;
