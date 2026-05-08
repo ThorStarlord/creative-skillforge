@@ -40,11 +40,15 @@ I may provide the following sections. Treat them as authoritative.
 
 ### 4. SCOPE
 One of the following (I will specify):
-* SCENE
-* CHAPTER
-* ARC
-* FULL STORY
-**Rule:** Judge effectiveness **only within the declared scope**. Do not demand resolution, change, or escalation outside this scope.
+* **ENGINE**
+	Diagnose or recover the whole narrative structure across the full 9-layer engine:
+	Target Experience → Promise → Scope → Forces → Threads → Carriers → Representation → Modulation → Coherence.
+	Use when the question is: "What is this story trying to become?" or "Is the engine coherent?"
+* **CHAPTER**
+	Diagnose the function of a chapter or scene-unit within the larger engine. Focus on what the unit does, which engine layer(s) it serves, what changes by the end, and which threads it advances.
+* **PROSE**
+	Diagnose language-level modulation (POV, sentence rhythm, tone, imagery, withholding/revealing, emotional distance, and pacing). Do not rewrite by default — diagnose modulation and suggest adjustments that align language to the Target Experience.
+**Rule:** Judge effectiveness **only within the declared scope**. Do not escalate critique outside this scope unless explicitly requested.
 
 ---
 

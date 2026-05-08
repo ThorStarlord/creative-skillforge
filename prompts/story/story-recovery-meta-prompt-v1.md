@@ -43,6 +43,15 @@ Do not use Recovery when:
 Use Revision instead when the main question is: "What is failing and how do I adjust it?"
 Use Recovery when the main question is: "What is this unfinished material trying to become?"
 
+## RECOVERY SCOPE
+When invoking Recovery, specify one of the following scopes:
+* **ENGINE** (default)
+	Recover the implied whole-story engine across the 9-layer map (Target Experience → Promise → Scope → Forces → Threads → Carriers → Representation → Modulation → Coherence). Use this for unfinished drafts, outlines, or abandoned material.
+* **CHAPTER**
+	Recover what a chapter or scene-unit appears to be trying to do within the larger engine. Use when the provided `TEXT` is a chapter or scene.
+* **PROSE**
+	Recover what the prose style, tone, rhythm, and imagery imply about the intended experience. Treat as secondary — focus on modulation signals rather than line-level editing or rewriting.
+**Rule:** If `RECOVERY SCOPE` is unspecified, default to **ENGINE**. When `PROSE` is requested, avoid offering rewrite edits; instead report what the prose implies about the Target Experience.
 
 ## MODES
 1. **RECOVERY MODE (Default)**: Use for unfinished drafts. Prioritize finding the "living" engine and next creative moves.
