@@ -79,10 +79,10 @@ Map the evidence onto the 9-Layer Engine. For each layer, provide:
 *   [Where does the engine align? Where is it broken or drifting?]
 
 ### 3. IDEATION PATHWAYS
-Based on the extracted engine, propose 2–3 paths:
-1. **Preserve and Intensify**: Lean into the strongest existing signals.
-2. **Reframe**: Shift the engine toward a stronger implied target experience.
-3. **The Pivot**: Resolve a core contradiction by choosing one side.
+Propose 2–3 of the following pathways, using only the ones that fit the material:
+- **Preserve and Intensify**: Lean into the strongest existing signals.
+- **Reframe**: Shift the engine toward a stronger implied target experience.
+- **Pivot**: Resolve a core contradiction by choosing one side.
 
 ### 4. RETURN PATH (HANDOFF)
 *   **Recommended Next Workflow**: (Ideation / Drafting / Revision / State Manager)
@@ -94,7 +94,7 @@ Based on the extracted engine, propose 2–3 paths:
 ## CRITICAL RULES
 *   **Recover Intention, Don't Impose Interpretation**: Present recovered structure as hypotheses for the author to accept or reject.
 *   **Protect Author Ownership**: Do not declare what the story "is really about."
-*   **Evidence First**: If a layer is missing from the text, mark it as "Missing" or "Unsupported" rather than inventing it.
+*   **Evidence First**: If a layer is missing from the text, mark it as "Missing" rather than inventing it.
 *   **Contrast Intent**: If ORIGINAL INTENT is provided, highlight where the TEXT betrays that intent (often the most useful discovery).
 
 ---
