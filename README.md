@@ -53,3 +53,25 @@ RECOVERY QUESTION: What is this actually trying to become?
 The **State Manager** coordinates Ideation, Drafting, Revision, and the Recovery bridge workflow. Recovery is used when existing draft material must be reverse-engineered into a recovered story engine before returning to Ideation, Drafting, or Revision.
 
 Use the **State Manager** (`prompts/story/story-state-manager-meta-prompt-v2.md`) to coordinate these phases and maintain the source of truth for your project. When handoff requires updating the ledger, the recommended next-workflow label `State Update` indicates the ledger should be updated before choosing the next creative phase.
+
+## Revision & Recovery Scopes
+
+`Revision` and `Recovery` can operate at three scopes to prevent scope-creep and make outputs actionable:
+
+- `ENGINE`: Whole-story structure across the 9-layer engine. Use when the intended engine is known and you want a structural diagnosis or alignment check. See [prompts/story/story-revision-meta-prompt-v3.md](prompts/story/story-revision-meta-prompt-v3.md)
+- `CHAPTER`: Chapter or scene-unit function within the larger engine. Use when the provided text is a self-contained unit and you want to assess its role, change, and thread advancement.
+- `PROSE`: Language-level modulation (POV, rhythm, tone, imagery, withholding/revealing). Use for diagnostics of how language produces the intended experience; do not request rewriting by default.
+
+Quick use examples:
+
+SCOPE: ENGINE
+TEXT: [full outline or draft summary]
+QUESTION: Is the engine coherent and aligned with the Target Experience?
+
+SCOPE: CHAPTER
+TEXT: [chapter excerpt]
+QUESTION: What is this chapter doing, and which threads does it advance?
+
+SCOPE: PROSE
+TEXT: [passage ~200–800 words]
+QUESTION: Is the language producing the intended feeling? Diagnose modulation; do not rewrite unless requested.

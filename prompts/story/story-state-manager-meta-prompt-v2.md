@@ -96,6 +96,10 @@ When performing an update or preparation, always use:
 * **Contradictions Found**: [Any issues detected]
 * **Phase Handoff**: [The formatted input for the target meta-prompt]
 
+When the target phase is `REVISION` or `RECOVERY`, include an explicit **Scope** field in the Phase Handoff:
+* **Scope**: ENGINE / CHAPTER / PROSE — and a one-line rationale for why this scope was chosen.
+    * Example: `Scope: CHAPTER — text is a single chapter excerpt; focus on unit function and thread advancement.`
+
 When ingesting Recovery output specifically, ensure the Phase Handoff preserves Recovery metadata so the ledger can safely record proposed changes:
 * **Per-layer Confidence Labels** (High / Medium / Low / Missing)
 * **Candidate Locked Layers** (with confidence)
