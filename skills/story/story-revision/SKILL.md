@@ -8,7 +8,7 @@ This skill provides a layered, bottom-up diagnosis of existing text to identify 
 3.  Define the **SCOPE** (SCENE, CHAPTER, ARC, or FULL STORY).
 4.  Review the diagnosis following the **DIAGNOSTIC ORDER (Bottom-Up)**:
     1.  **Identify the Symptom** (Usually in Modulation or Representation).
-    2.  **Trace Downward**: Check Modulation -> Representation -> Carriers -> Threads -> Structural Forces -> Scope -> Promise -> Target Experience.
+    2.  **Trace Downward**: Check Modulation -> Representation -> Carriers -> Threads / Modules -> Structural Forces -> Scope / Scale -> Promise / Constraints -> Target Experience.
 
 ## Best Practices
 *   Stop at the first layer of failure. Fix the core structural forces before worrying about POV or pacing.
