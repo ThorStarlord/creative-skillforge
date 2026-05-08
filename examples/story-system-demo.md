@@ -1,21 +1,24 @@
 # Creative Skillforge Workflow Demo: "The Clockwork Heart"
 
-This example demonstrates how the Creative Skillforge system moves a story from a vague idea to a drafted scene and through revision.
+This example demonstrates how the Creative Skillforge system moves a story from a vague idea to a drafted scene and through revision using the 9-layer bidirectional engine.
 
 ---
 
 ## PHASE 1: IDEATION
 **Input to Ideation Prompt:**
 *   **Seed Ideas:** A world where hearts are mechanical and must be wound. A thief who steals time.
-*   **Target Feeling:** "Terminal nostalgia" mixed with a sense of urgent beauty.
-*   **Scope:** STORY ENGINE
+*   **Target Experience:** "Terminal nostalgia" mixed with a sense of urgent beauty.
+*   **Scope:** STORY ENGINE (Layers 1-6)
 
-**Output (Layer 3: Structural Principles):**
-*   **Want:** Elara wants to steal enough "winding keys" to restart her sister's frozen heart.
-*   **Resistance:** The City Watch monitors every second; winding keys are strictly rationed by the elite.
-*   **Conflict:** To get the keys, she must betray the clockmaker who protected her, essentially "killing" his trust to save her sister's life.
-*   **Stakes:** If she fails, her sister stays frozen forever. If she succeeds, she loses her only friend and becomes the monster the City Watch says she is.
-*   **Change Direction:** From desperate survival to sacrificial clarity.
+**Output (Key Layers):**
+*   **Layer 1: Target Experience:** Bittersweet urgency; the feeling that time is both precious and stolen.
+*   **Layer 2: Promise / Constraints:** Steampunk Neo-Noir; Short Story scope.
+*   **Layer 4: Structural Forces:**
+    *   **Want:** Elara wants to steal enough "winding keys" to restart her sister's frozen heart.
+    *   **Resistance:** The City Watch monitors every second; winding keys are rationed by the elite.
+    *   **Conflict:** To save her sister, she must betray Master Thorne, the only man who treated her as human.
+    *   **Stakes:** Her sister's life vs. Elara's soul and only friendship.
+*   **Layer 6: Carriers:** Elara (desperate agency), Master Thorne (paternal carrier of the system's kindness), The Clockwork District (claustrophobic, rhythmic setting).
 
 ---
 
@@ -23,8 +26,9 @@ This example demonstrates how the Creative Skillforge system moves a story from 
 **Action:** The **State Manager** updates the `story-state-ledger.md` and prepares the handoff for drafting.
 
 **Prepared Drafting Input:**
-*   **Scene Function:** Intensify temptation (Elara is in the clockmaker's workshop, seeing the keys she needs).
+*   **Scene Function:** Intensify temptation (Elara is in the workshop, seeing the Master Key).
 *   **Intensity:** RISING.
+*   **Modulation Target:** Subdued, rhythmic, weighted by guilt.
 
 ---
 
@@ -38,13 +42,17 @@ This example demonstrates how the Creative Skillforge system moves a story from 
 
 ---
 
-## PHASE 4: REVISION
+## PHASE 4: REVISION (Bottom-Up Diagnosis)
 **Handoff to Revision Prompt:**
 *   **Scope:** SCENE.
-*   **Primary Issue (Layer 1: Principles):** The stakes feel a bit internal. We need to see the physical pressure of the City Watch or the sister's condition more clearly to justify the betrayal.
-*   **Adjustment:** Add a sensory detail about the "Frozen Ward" or a distant siren from the Watch to ground the urgency.
+*   **Observed Symptom:** The scene feels a bit too "internal." Thorne feels like a prop rather than a carrier of resistance.
+*   **Trace Downward:**
+    *   Modulation: Tone is correct.
+    *   Representation: Scene beat is correct.
+    *   **Root Cause (Layer 6: Carriers):** Thorne is being too passive. To create real pressure, he should instantiate the "Structural Forces" of the system's surveillance or Elara's guilt more actively.
+*   **Adjustment:** Have Thorne mention the City Watch's recent "time audits," making Elara realize that stealing the key will get him arrested immediately. This raises the **Stakes** and **Conflict**.
 
 ---
 
 ## CONCLUSION
-By following this cycle, the story remains grounded in its original **Target Feeling** while the **Structural Engine** ensures the drama is robust and consistent.
+By using the 9-layer engine, we identified that the "flatness" of the scene wasn't a prose issue (Modulation) but a mismatch in how the **Carriers** were expressing the **Structural Forces**.
