@@ -40,9 +40,16 @@ The core of the Creative Skillforge is a three-phase story development cycle sup
 3.  **Revision** (`prompts/story/story-revision-meta-prompt-v3.md`): Bottom-up diagnosis and refinement.
 
 ### Bridge Workflow
--- **Recovery / Narrative Reverse Engineering** (`prompts/story/story-recovery-meta-prompt-v1.md`): A bridge workflow for unfinished drafts. It extracts the implied story engine from existing material and returns the project to Ideation, Drafting, or Revision.
-	- Depth modes: `SCAN` (triage), `MAP` (default, full recovery), `FORK` (2–3 variants), `HANDOFF` (prepared input for State Manager).
+- **Recovery / Narrative Reverse Engineering** (`prompts/story/story-recovery-meta-prompt-v1.md`): A bridge workflow for unfinished drafts. It extracts the implied story engine from existing material and returns the project to Ideation, Drafting, or Revision.
+	- Depth modes: `SCAN` (minimum viable recovery), `MAP` (full 9-layer recovery for short-to-medium material), `FORK` (2–3 variants), `HANDOFF` (prepared input for State Update).
+
+Example (brief):
+
+RECOVERY DEPTH: SCAN
+TEXT: [messy scene / abandoned fragment]
+ORIGINAL INTENT: I thought this was a revenge story.
+RECOVERY QUESTION: What is this actually trying to become?
 
 The **State Manager** coordinates Ideation, Drafting, Revision, and the Recovery bridge workflow. Recovery is used when existing draft material must be reverse-engineered into a recovered story engine before returning to Ideation, Drafting, or Revision.
 
-Use the **State Manager** (`prompts/story/story-state-manager-meta-prompt-v2.md`) to coordinate these phases and maintain the source of truth for your project.
+Use the **State Manager** (`prompts/story/story-state-manager-meta-prompt-v2.md`) to coordinate these phases and maintain the source of truth for your project. When handoff requires updating the ledger, the recommended next-workflow label `State Update` indicates the ledger should be updated before choosing the next creative phase.

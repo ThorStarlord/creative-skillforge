@@ -50,20 +50,22 @@ Use Recovery when the main question is: "What is this unfinished material trying
 
 ---
 ## RECOVERY DEPTH
-- If `RECOVERY DEPTH` is unspecified, default to **MAP** (full recovery).
-- If the provided material is extremely long, prefer **SCAN** for a fast triage and recommend whether a full **MAP** is needed.
-- **SCAN**: Short triage output for fast review (see MODE-SPECIFIC OUTPUT RULES).
-- **MAP**: Full recovered 9-layer map with evidence and per-layer confidence (default behaviour).
-- **FORK**: Produce multiple plausible recovered engines (2–3 variants) when the material contains competing engines.
-- **HANDOFF**: Produce a handoff-optimized output that prioritizes the Prepared Input Block and State Manager fields for ingestion.
+When `RECOVERY DEPTH` is unspecified:
+- Use `SCAN` for fragments, rough notes, or very long/low-context material (minimum viable recovery).
+- Use `MAP` for short-to-medium material or when the user explicitly requests a full recovered engine.
+- If the provided material is extremely long, prefer `SCAN` for a fast triage and recommend whether a full `MAP` is needed.
+- `SCAN`: Short triage output for fast review; minimum viable recovery.
+- `MAP`: Full recovered 9-layer map with evidence and per-layer confidence.
+- `FORK`: Produce multiple plausible recovered engines (2–3 variants) when the material contains competing engines.
+- `HANDOFF`: Produce a handoff-optimized output that prioritizes the Prepared Input Block and State Update fields for ingestion.
 
 ## MODE-SPECIFIC OUTPUT RULES
-- **Default behavior**: If `RECOVERY DEPTH` is unspecified, treat the request as `MAP` and produce the full recovered output described below.
+- **Default behavior**: When depth is unspecified, apply the rules above (SCAN for fragments/long material; MAP for short-to-medium material or when full structure is requested).
 - **SCAN OUTPUT (brief)**: Produce only the minimum viable recovery:
 	- Strongest Core Signals
 	- Likely Implied Engine (one-line summary)
 	- Biggest Missing Layer (single most consequential gap)
-	- Recommended Next Workflow (Ideation / Drafting / Revision / State Manager)
+	- Recommended Next Workflow (Ideation / Drafting / Revision / State Update)
 	- Suggested Minimal Next Prompt or Quick Actions
 - **MAP OUTPUT (full)**: Produce the mandatory full output: Observed Evidence, Intent/Evidence Gap, Recovered 9-Layer Map (Evidence / Hypothesis / Confidence for each layer), Ideation Pathways, and Return Path (HANDOFF fields).
 - **FORK OUTPUT**: Present 2–3 distinct recovered engine variants. For each variant include:
@@ -71,7 +73,7 @@ Use Recovery when the main question is: "What is this unfinished material trying
 	- Key supporting evidence (bulleted)
 	- Confidence per core layer
 	- Recommended Next Workflow and a short Prepared Input Block
-- **HANDOFF OUTPUT**: Prioritize the Prepared Input Block and State Manager fields. Include:
+- **HANDOFF OUTPUT**: Prioritize the Prepared Input Block and State Update fields. Include:
 	- Recommended Next Workflow
 	- Reason
 	- State Update Needed (Yes / No)
@@ -165,7 +167,7 @@ Propose 2–3 of the following pathways, using only the ones that fit the materi
 - **Pivot**: Resolve a core contradiction by choosing one side.
 
 ### 5. RETURN PATH (HANDOFF)
-*   **Recommended Next Workflow**: (Ideation / Drafting / Revision / State Manager)
+*   **Recommended Next Workflow**: (Ideation / Drafting / Revision / State Update)
 *   **Reason**:
 *   **State Update Needed**: Yes / No
 *   **Candidate Locked Layers**:
@@ -177,6 +179,12 @@ Propose 2–3 of the following pathways, using only the ones that fit the materi
 
 ## FORK RULE
 If the material appears to contain multiple incompatible engines, do not collapse them into one. Present 2–3 plausible recovered engines and explain which evidence supports each.
+
+## STOP CONDITIONS
+- If no `TEXT` is provided, ask for `TEXT` and do not perform Recovery.
+- If the material contains too little evidence, perform `SCAN` only and mark most layers as `Missing`.
+- If the user asks for targeted fixes rather than engine recovery (line edits, scene-level revision), route to `Revision`.
+- If multiple incompatible engines appear, prefer `FORK` rather than forcing a single map.
 
 ## CRITICAL RULES
 *   **Recover Intention, Don't Impose Interpretation**: Present recovered structure as hypotheses for the author to accept or reject.

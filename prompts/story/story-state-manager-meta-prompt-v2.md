@@ -48,13 +48,13 @@ You must track and coordinate the following layers:
         * **Candidate Locked Layers** (with confidence)
         * **Open / Speculative Layers**
         * **Author-Confirmation-Needed Layers**
-        * **Recommended Next Workflow** (Ideation / Drafting / Revision / State Manager)
+        * **Recommended Next Workflow** (Ideation / Drafting / Revision / State Update)
         * **Prepared Input Block** (ready for ingestion by the next phase)
     * Determine whether the project should return to:
         * **Ideation**, if the recovered engine needs structural decisions;
         * **Drafting**, if the recovered engine is stable enough to continue generating scenes;
         * **Revision**, if the text exists and the main task is refinement;
-        * **State Manager**, if the ledger must be updated before choosing a phase.
+        * **State Update**, if the ledger must be updated before choosing a phase.
 
 ### 1. Transitioning from IDEATION to DRAFTING
 * **Input**: Final output from Ideation Phase.
@@ -84,6 +84,8 @@ You must track and coordinate the following layers:
 * **"PREPARE PHASE [IDEATION|DRAFTING|REVISION|RECOVERY]"**: Generate the specific input block required for the next phase's meta-prompt.
 * **"CHECK CONSISTENCY"**: Scan the current text/ideas against the Ledger and Log to find contradictions.
 * **"SUMMARIZE CANON"**: Provide a concise summary of all established facts for a quick reference.
+
+* **"CONFIRM RECOVERY [LAYERS]"**: Mark selected recovered layers as accepted decisions and update the Story State Ledger. Use when the author has explicitly confirmed candidate locked layers from a Recovery output; accept a list of layer identifiers or a range.
 
 ---
 
