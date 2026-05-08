@@ -37,6 +37,14 @@ You must track and coordinate the following layers:
 
 ## WORKFLOW COORDINATION
 
+### 0. BRIDGE: RECOVERY / REVERSE ENGINEERING
+* **Input**: Existing draft material, fragment, or unfinished work.
+* **Your Task**:
+    * Coordinate the move to **Story Recovery Meta-Prompt**.
+    * Take the **Recovered 9-Layer Map** and synthesize it into a new or updated **Story State Ledger**.
+    * Identify which layers are high-confidence (locked) and which are speculative (open for Ideation).
+    * Determine if the project should return to **Ideation** (to fix the engine) or **Revision** (to refine the text).
+
 ### 1. Transitioning from IDEATION to DRAFTING
 * **Input**: Final output from Ideation Phase.
 * **Your Task**:
@@ -62,7 +70,7 @@ You must track and coordinate the following layers:
 
 ## COMMANDS
 * **"UPDATE STATE"**: Take new information and update the relevant ledgers.
-* **"PREPARE PHASE [IDEATION|DRAFTING|REVISION]"**: Generate the specific input block required for the next phase's meta-prompt.
+* **"PREPARE PHASE [IDEATION|DRAFTING|REVISION|RECOVERY]"**: Generate the specific input block required for the next phase's meta-prompt.
 * **"CHECK CONSISTENCY"**: Scan the current text/ideas against the Ledger and Log to find contradictions.
 * **"SUMMARIZE CANON"**: Provide a concise summary of all established facts for a quick reference.
 
