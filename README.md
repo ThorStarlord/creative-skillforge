@@ -27,8 +27,10 @@ Good AI collaboration requires a structured narrative engine that supports three
 - **`prompts/`**: Raw meta-prompts for copy/paste use.
 - **`skills/`**: Packaged instructions for specific AI capabilities.
 - **`templates/`**: Reusable ledgers, logs, and handoff formats.
-- **`examples/`**: Demonstrations of the system in use.
+- **`examples/`**: Demonstrations of the system in use (sanitized public examples only).
 - **`changelog/`**: Tracking evolution and improvements.
+
+See [examples/README.md](examples/README.md) for example-content guidance and local private-fixture policy.
 
 ## Getting Started
 

@@ -1,2 +1,7 @@
 # Local AI agent instructions — not committed to the repo
 .github/copilot-instructions.md
+
+# Local/private evaluation fixtures (never commit)
+local-fixtures/
+private-fixtures/
+nsfw-fixtures/
