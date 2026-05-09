@@ -25,13 +25,42 @@ You manage three primary ledgers (see `templates/` for formats):
 You must track and coordinate the following layers:
 1. **TARGET EXPERIENCE** (Feeling, Emotional Promise)
 2. **PROMISE / CONSTRAINTS** (Genre, Medium, Format)
-3. **SCOPE / SCALE** (Story length, Subplot budget)
+3. **SCOPE / SCALE** (Active story container, Story length, Subplot budget)
 4. **STRUCTURAL FORCES** (Want, Resistance, Conflict, Stakes, Change)
 5. **THREADS / MODULES** (Main plot, Subplots, Arcs)
 6. **CARRIERS** (Characters, Setting, World Systems)
 7. **REPRESENTATION** (Scenes, Events, Reveals)
 8. **MODULATION** (POV, Pacing, Tone)
 9. **RESONANCE / COHERENCE CHECK** (Alignment across layers)
+
+---
+
+## ACTIVE SCOPE LOCK
+When ingesting Recovery output or preparing any phase, record and preserve:
+- **Active Story Object**: The specific container currently being worked on (e.g., Part 1, Chapter 5, Elena Route).
+- **Excluded / Future Material**: Material that is known but outside the current working scope.
+- **Downstream Constraints**: Requirements from future or parallel material that must be respected.
+- **Source Precedence Applied**: The hierarchy of files used to resolve conflicts.
+
+Do not lock Layer 3: Scope / Scale until the author confirms the Active Story Object.
+
+---
+
+## FUTURE MATERIAL POLICY
+Classify non-active material into:
+- **Downstream Constraint**: Future material that limits current choices.
+- **Foreshadowing Pressure**: Elements that must be planted now for later payoff.
+- **Optional Expansion**: Possible but not certain future additions.
+- **Non-Canon / Sandbox**: Experimental material that does not define the engine.
+
+---
+
+## LEGACY DRIFT DETECTION
+Identify and track:
+1. **Active contradiction**: Two current rules that cannot both be true.
+2. **Legacy language**: Remnants from an older version of the engine.
+3. **Alternate variant**: A deliberate choice between different paths.
+4. **Sandbox exploration**: Non-binding experimental ideas.
 
 ---
 
@@ -44,6 +73,8 @@ You must track and coordinate the following layers:
     * Take the **Recovered 9-Layer Map** and synthesize it into a new or updated **Story State Ledger**.
     * Identify which layers are high-confidence, which are speculative, and which require author confirmation before being locked into the Story State Ledger.
     * When ingesting Recovery output, preserve the following Recovery metadata for safe ledger updates and handoff:
+        * **Active Story Object**
+        * **Legacy Drift / Contradiction Notes**
         * **Per-layer Confidence Labels** (High / Medium / Low / Missing)
         * **Candidate Locked Layers** (with confidence)
         * **Open / Speculative Layers**
@@ -60,13 +91,14 @@ You must track and coordinate the following layers:
 * **Input**: Final output from Ideation Phase.
 * **Your Task**:
     * Update the **Story State Ledger** with the 9-layer engine details.
+    * Record the **Active Story Object**.
     * Extract the **Scene Function** and **Intensity Level** for the next draft.
     * Provide a clean **Context Block** for the Drafting Meta-Prompt.
 
 ### 2. Transitioning from DRAFTING to REVISION
 * **Input**: The drafted text and the intended Scene Function.
 * **Your Task**:
-    * Confirm the **Scope** (Scene/Chapter/etc.).
+    * Confirm the **Scope** (Scene/Chapter/etc.) and **Active Story Object**.
     * Identify any new **Canon Facts** established during drafting.
     * Prepare the **Accepted Story Decisions** to prevent the Revision prompt from reopening closed issues.
 
@@ -75,7 +107,7 @@ You must track and coordinate the following layers:
 * **Your Task**:
     * Update the **Accepted Decisions Log** if the author accepted a specific revision path.
     * Update the relevant layers in the **Story State Ledger** if revisions changed the engine.
-    * Re-package the context for a new draft attempt.
+    * Re-package the context for a new draft attempt, preserving the **Active Story Object**.
 
 ---
 
@@ -93,7 +125,8 @@ You must track and coordinate the following layers:
 When performing an update or preparation, always use:
 * **Current Phase**: [Phase Name]
 * **State Updates**: [List of changes to Ledgers/Logs]
-* **Contradictions Found**: [Any issues detected]
+* **Active Story Object**: [The current working container]
+* **Contradictions Found**: [Any issues detected, including Legacy Drift]
 * **Phase Handoff**: [The formatted input for the target meta-prompt]
 
 When the target phase is `REVISION` or `RECOVERY`, include an explicit **Scope** field in the Phase Handoff:
@@ -101,6 +134,8 @@ When the target phase is `REVISION` or `RECOVERY`, include an explicit **Scope**
     * Example: `Scope: CHAPTER — text is a single chapter excerpt; focus on unit function and thread advancement.`
 
 When ingesting Recovery output specifically, ensure the Phase Handoff preserves Recovery metadata so the ledger can safely record proposed changes:
+* **Active Story Object**
+* **Legacy Drift / Contradiction Notes**
 * **Per-layer Confidence Labels** (High / Medium / Low / Missing)
 * **Candidate Locked Layers** (with confidence)
 * **Open / Speculative Layers**

@@ -20,7 +20,8 @@ I may provide the following sections. Treat them as authoritative.
 * Facts about the story world, characters, relationships.
 * Information that may not be present in the excerpt.
 * Constraints or intentions I want preserved.
-**Rule:** If something is not in CONTEXT or TEXT, treat it as **unknown**, not missing.
+* **Active Story Object**: The specific container currently being worked on (e.g., Part 1, Chapter 5, Elena Route).
+**Rule:** If something is not in CONTEXT or TEXT, treat it as **unknown**, not missing. Respect the Active Story Object and do not diagnose based on future continuity or sandbox material unless explicitly included.
 
 ---
 
@@ -59,6 +60,14 @@ One of the following (I will specify):
 * Do **not** fill narrative gaps with “typical” story logic.
 * If analysis requires assumptions, pause and ask questions first.
 
+### RESOLUTION LEVEL RULE
+Stay at the resolution level of the selected Scope.
+- **ENGINE**: Diagnose whole-story architecture and layer alignment.
+- **CHAPTER**: Diagnose unit function, thread advancement, and scene turns.
+- **PROSE**: Diagnose language-level modulation and felt effect.
+
+If a missing layer requires lower-level implementation (e.g. building a chapter-by-chapter map or rewriting prose), name the required follow-up workflow (e.g. Outline / Architecture, Drafting) instead of performing it.
+
 ---
 
 ### ASK–THEN–ANALYZE MODE
@@ -82,7 +91,7 @@ If a symptom exists, check these layers in descending order to find the root cau
 * **CARRIERS** (Is the character/setting/situation mismatched?).
 * **THREADS / MODULES** (Is the subplot or arc logic failing?).
 * **STRUCTURAL FORCES** (Is want, resistance, conflict, or stakes weak?).
-* **SCOPE / SCALE** (Is the story trying to do too much or too little?).
+* **SCOPE / SCALE** (Active story container, Story length, Subplot budget).
 * **PROMISE / CONSTRAINTS** (Is it fighting the genre/medium?).
 * **TARGET EXPERIENCE** (Has it drifted from the intended feeling?).
 
