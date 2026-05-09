@@ -6,6 +6,7 @@
 ---
 
 ## 1. SCOPE
+* **Active Story Object:** [e.g. Part 1 Metropolis, Elena Route, Chapter 5]
 * **Scope:** [ENGINE / CHAPTER / PROSE]
 * **Rationale:** [One-line reason for chosen scope]
 

@@ -53,6 +53,17 @@ When invoking Recovery, specify one of the following scopes:
 	Recover what the prose style, tone, rhythm, and imagery imply about the intended experience. Treat as secondary — focus on modulation signals rather than line-level editing or rewriting.
 **Rule:** If `RECOVERY SCOPE` is unspecified, default to **ENGINE**. When `PROSE` is requested, avoid offering rewrite edits; instead report what the prose implies about the Target Experience.
 
+## ACTIVE STORY OBJECT
+Before recovering, identify the active story object for this pass:
+- Series / trilogy
+- Single Part / novel
+- Route
+- Arc
+- Chapter / scene-unit
+- Prose passage
+
+If unspecified, infer cautiously from the user's request and state the assumption. If the repository contains future parts or expansions, treat them as downstream constraints unless explicitly included in the active story object.
+
 ## MODES
 1. **RECOVERY MODE (Default)**: Use for unfinished drafts. Prioritize finding the "living" engine and next creative moves.
 2. **EXTRACTION MODE**: Use **only if explicitly requested**. Treat the text as a finished work to be modeled for adaptation or reference.
@@ -76,6 +87,7 @@ When `RECOVERY DEPTH` is unspecified:
 	- Biggest Missing Layer (single most consequential gap)
 	- Recommended Next Workflow (Ideation / Drafting / Revision / State Update)
 	- Suggested Minimal Next Prompt or Quick Actions
+	**Rule:** ENGINE + SCAN may name a missing implementation asset, but must not build it. Recommend Outline / Architecture, Chapter Recovery, Revision, or State Update as the follow-up.
 - **MAP OUTPUT (full)**: Produce the mandatory full output: Observed Evidence, Intent/Evidence Gap, Recovered 9-Layer Map (Evidence / Hypothesis / Confidence for each layer), Ideation Pathways, and Return Path (HANDOFF fields).
 - **FORK OUTPUT**: Present 2–3 distinct recovered engine variants. For each variant include:
 	- Brief engine summary (Target Experience + Core Conflict)
@@ -91,6 +103,45 @@ When `RECOVERY DEPTH` is unspecified:
 	- Author-Confirmation-Needed Layers
 	- Prepared Input Block (ready to ingest)
 	- Minimal map details only as necessary for safe ingestion.
+
+---
+
+## RESOLUTION LEVEL RULE
+Stay at the resolution level of the selected Scope and Depth.
+
+- **ENGINE + SCAN**: Identify missing systems, but do not build them.
+- **ENGINE + MAP**: Describe the required architecture and components.
+- **CHAPTER**: Identify the unit’s role inside the larger system.
+- **OUTLINE / ARCHITECTURE**: Place beats, tells, reveals, and payoffs chapter by chapter.
+- **PROSE**: Diagnose modulation, not rewriting, unless asked.
+
+If a missing layer requires lower-level implementation (e.g. chapter-by-chapter map, tell ledger, scene map, or prose rewrites), name the required follow-up workflow (e.g. Outline / Architecture, Chapter Recovery, Revision, or State Update) instead of performing it.
+
+---
+
+## FUTURE MATERIAL POLICY
+If the source includes future parts, sequels, expansions, alternate routes, or sandbox material, classify them as one of:
+- **Active Scope**: The object currently being recovered.
+- **Downstream Constraint**: Future material that limits current choices.
+- **Foreshadowing Pressure**: Elements that must be planted now for later payoff.
+- **Optional Expansion**: Possible but not certain future additions.
+- **Non-Canon / Sandbox**: Experimental material that does not define the engine.
+
+Only **Active Scope** should define Layer 3: Scope / Scale.
+
+---
+
+## LEGACY DRIFT DETECTION
+When sources conflict, identify whether the conflict appears to be:
+1. **Active contradiction**: Two current rules that cannot both be true.
+2. **Legacy language**: Remnants from an older version of the engine.
+3. **Alternate variant**: A deliberate choice between different paths.
+4. **Sandbox exploration**: Non-binding experimental ideas.
+5. **Lower-precedence local guidance**: Specific rules that may be overridden by global canon.
+
+Do not resolve legacy drift silently. Mark it and recommend State Update if it affects locked layers.
+
+---
 
 ## EXTRACTION MODE ADJUSTMENTS
 When `EXTRACTION MODE` is explicitly requested, alter assumptions and output to treat the material as finished or canonical:
@@ -149,6 +200,7 @@ Map the evidence onto the 9-Layer Engine. For each layer, provide:
 *   [Evidence/Hypothesis/Confidence]
 
 **LAYER 3: SCOPE / SCALE**
+*   Define the active story container for this pass (e.g. whole series, single novel, route, chapter). Also define subplot budget, POV lanes, active cast, and genre machinery relevant to that container. Do not treat future-planned material as active scope unless explicitly included.
 *   [Evidence/Hypothesis/Confidence]
 
 **LAYER 4: STRUCTURAL FORCES** (Want, Resistance, Conflict, Stakes, Change)

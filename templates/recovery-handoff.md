@@ -6,6 +6,7 @@
 ---
 
 ## 1. RECOVERY SCOPE
+* **Active Story Object:** [e.g. Series, Part 1, Chapter 5]
 * **Requested Scope:** [ENGINE (default) / CHAPTER / PROSE]
 * **Recovery Depth:** [SCAN / MAP / FORK / HANDOFF]
 
@@ -14,12 +15,12 @@
 * **Core Signals:**
 * **Loose Threads:**
 * **Accidental Noise:**
-* **Contradictions:**
+* **Contradictions (including Legacy Drift):**
 
 ## 3. RECOVERED 9-LAYER MAP (brief)
 - TARGET EXPERIENCE: [Evidence / Hypothesis / Confidence]
 - PROMISE / CONSTRAINTS: [Evidence / Hypothesis / Confidence]
-- SCOPE / SCALE: [Evidence / Hypothesis / Confidence]
+- SCOPE / SCALE: [Active Working Container details]
 - STRUCTURAL FORCES: [Evidence / Hypothesis / Confidence]
 - THREADS / MODULES: [Evidence / Hypothesis / Confidence]
 - CARRIERS: [Evidence / Hypothesis / Confidence]
@@ -28,11 +29,13 @@
 - RESONANCE / COHERENCE: [Summary]
 
 ## 4. RECOVERY METADATA
+* **Future Material Policy Applied:** [Active Scope / Downstream Constraint / etc.]
 * **Per-layer Confidence Labels:** (High / Medium / Low / Missing)
 * **Candidate Locked Layers:** (with confidence)
 * **Open / Speculative Layers:**
 * **Author-Confirmation-Needed Layers:**
 * **Recommended Next Workflow:** [Ideation / Drafting / Revision / State Update]
+* **Resolution Level / Follow-up Workflow:** [e.g. ENGINE+SCAN; recommend Outline / Architecture]
 
 ## 5. PREPARED INPUT BLOCK (for the target phase)
 [Paste a ready-to-ingest input block for the recommended next workflow.]

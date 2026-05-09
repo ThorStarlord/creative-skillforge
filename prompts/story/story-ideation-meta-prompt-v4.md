@@ -20,6 +20,7 @@ I may provide the following. Treat them as authoritative.
 ### 1. CONTEXT (CANON / CONSTRAINTS)
 * Facts, preferences, boundaries, or intentions.
 * Hard limits on what can be proposed.
+* **Active Story Object**: The specific container currently being worked on (e.g., Series, Part 1, Chapter 5).
 **Rule:** Do not contradict CONTEXT.
 
 ---
@@ -70,6 +71,7 @@ Work **top-down**. Do not skip layers. Global structure must be stable before dr
 * What promise and constraints shape the experience?
 
 ### LAYER 3: SCOPE / SCALE
+* **Active Story Object**: Define the active working container for this pass.
 * Story length, POV count, subplot budget, act/chapter size.
 * What can the length responsibly contain?
 
@@ -137,7 +139,7 @@ Always use this structure, filling only the layers appropriate to SCOPE:
 * [Details or options]
 
 **LAYER 3: SCOPE / SCALE**
-* [Details]
+* [Details, including the defined Active Story Object]
 
 **LAYER 4: STRUCTURAL FORCES**
 * **Want:**

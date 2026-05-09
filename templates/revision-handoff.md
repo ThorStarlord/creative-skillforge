@@ -6,10 +6,10 @@
 ---
 
 ## 1. SCOPE
-*   [ ] SCENE
+*   **Active Story Object:** [e.g. Part 1 Metropolis, Elena Route, Chapter 5]
+*   [ ] ENGINE
 *   [ ] CHAPTER
-*   [ ] ARC
-*   [ ] FULL STORY
+*   [ ] PROSE
 
 ## 2. INTENTION (What was I trying to do?)
 *   **Intended Feeling:** [e.g., Dread]
